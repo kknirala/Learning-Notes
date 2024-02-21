@@ -1,0 +1,21 @@
+Monolith Architecture
+• The original architecture
+• All software components are executed in a single process
+• No distribution of any kind
+• Strong coupling between all classes
+• Usually implemented as Silo
+
+Monolith Architecture Pros
+• Easier to design
+• Performance
+
+Service Oriented Architecture (SOA)
+First coined in 1998
+• Apps are services exposing functionality to the outside world
+• Services expose metadata to declare their functionality
+• Usually implemented using SOAP & WSDL
+• Usually implemented with ESB
+
+SOA Pros
+• Sharing Data & Functionality
+• Polyglot Between Services
