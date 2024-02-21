@@ -1,0 +1,133 @@
+History:-
+• Problems with monolith and SOA led to a new paradigm
+• Has to be modular, with simple API
+• The term “microservices” first appeared in 2011
+• In 2014 Martin Fowler and James Lewis published their “Microservices” article
+• Became the de-facto standard for Microservices definition
+
+Characteristics of Microservices
+ 1- Componentization via Services
+ 2- Organized Around Business Capabilities
+ 3- Products not Projects
+ 4- Smart Endpoints and Dumb Pipes
+ 5- Decentralized Governance
+ 6- Decentralized Data Management
+ 7- Infrastructure Automation
+ 8- Design for Failure
+ 9- Evolutionary Design
+
+Componentization via Services
+• Modular design is always a good idea
+• Components are the parts that together compose the software
+• Modularity can be achieved using:
+• Libraries – called directly within the process
+• Services – called by out-of-process mechanism (Web API, RPC)
+• In Microservices we prefer using Services for the componentization
+• Libraries can be used inside the service
+• Motivation:
+  • Independent deployment
+  • Well defined interface
+
+
+Products not Projects
+• With traditional projects, the goal is to deliver a working code
+• No lasting relationship with the customer
+• Often no acquaintance with the customer
+• After delivering – the team moves on to the next project 
+• Motivation:
+  • Increase customer’s satisfaction
+  • Change developers’ mindset
+
+
+Smart Endpoints and Dumb Pipes
+• Traditional SOA projects used two complicated mechanisms:
+• ESB
+• WS-* protocol
+• Made inter-service communication complicated and difficult to maintain
+• Microservices systems use “dumb pipes” – simple protocols
+• Strive to use what the web already offers
+• Usually – REST API, the simplest API in existence
+• Important notes:
+  • Direct connections between services is not a good idea
+  • Better use discovery service or a gateway
+  • In recent years more protocols were introduced (GraphQL,gRPC), some of them quite complex
+• Motivation:
+  • Accelerate development
+  • Make the app easier to maintain
+
+Decentralized Governance
+• In traditional projects there is a standard for almost anything:
+  • Which dev platform to use
+  • Which database to use
+  • How logs are created
+  • And more…
+• With Microservices each team makes its own decisions:
+  • Which dev platform to use
+  • Which database to use
+  • How logs are created
+  • And more…
+• Each team is fully responsible for its service
+  • “You build it, you run it”
+  • …and so will make the optimal decisions
+  • Enabled by the loosely coupled nature of Microservices
+  • Multi dev platform is called Polyglot
+• Motivation:
+•   Enables making the optimal technological decisions for the specific service
+
+
+Decentralized Data Management
+• Traditional systems have a single database
+• Stores all the system’s data from all the components
+• With Microservices each service has its own database
+• Important notes:
+  • This is the most controversial attribute of Microservices
+  • Not always possible
+  • Raises problems such as distributed transactions, data duplication and more
+  • Don’t insist on it
+• Motivation:
+  • Right tool for the right task – having the right database is important
+  • Encourages isolation
+
+
+Infrastructure Automation
+• The SOA paradigm suffered from lack of tooling
+• Tooling greatly helps in deployment using:
+  • Automated Testing
+  • Automated Deployment
+• For Microservices automation is essential
+• Short deployment cycles are a must
+• Can’t be done manually
+• There are a lot of automation tools:
+  • Azure DevOps
+  • GitLab
+  • Jenkins
+• Motivation:
+  • Short deployment cycles
+
+
+Design for Failure
+• With Microservices there are a lot of processes and a lot of network traffic
+• A lot can go wrong
+• The code must assume failure can happen and handle it gracefully
+• Extensive logging and monitoring should be in place
+• Motivation:
+  • Increase system’s reliability
+
+
+Evolutionary Design
+• The move to Microservices should be gradual
+• No need to break everything apart
+• Start small and upgrade each part separately
+
+
+Summary
+• These are guidelines, not mandatory instructions
+• Adopt what works for you
+• The Microservices world is rapidly changing
+• Follow new APIs, monitoring, cloud services etc.
+• The most important attributes:
+  • Componentization
+  • Organized around business capabilities
+  • Decentralized governance
+  • Decentralized data management (when possible)
+  • Infrastructure automation
